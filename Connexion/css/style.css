@@ -1,0 +1,49 @@
+h2{
+	letter-spacing: 14px;
+	font-size: 25px;
+ 	font-weight:bold;
+ 	font-family: 'Alegreya Sans SC', sans-serif;
+ 	border-bottom: 1px solid #d7c9a8;
+ 	padding-bottom: 5px;
+}
+
+.submit{
+
+	 border:1px solid #d7c9a8 ;
+	 letter-spacing: 3px;
+	 background-color: transparent;
+	 color:black;
+}
+
+.signin{
+		background-color: transparent;
+	border:none;
+	font-size: 15px;
+
+
+}
+
+input{
+
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #d7c9a8 ;
+    background-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 13px;
+    margin: 5px;
+  
+
+}
+.col-md-5{
+	background-image:url(http://i.share.pho.to/78d23fab_o.jpeg);
+	background-attachment: cover;
+
+}
+
+.Connexion{
+	color:black;
+}
