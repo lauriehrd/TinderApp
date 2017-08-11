@@ -1,7 +1,30 @@
-h1{
-	font-family: font-family: 'Alegreya Sans SC', sans-serif;
+h2 {
 	letter-spacing: 14px;
-	border-bottom: 1px solid black;
-	font-weight:normal;
+	font-size: 17px;
+ 	font-weight:normal;
+ 	padding-bottom: 20px;
+ 	font-family: 'Alegreya Sans SC', sans-serif;
     
+}
+img {
+width:20%;
+
+}
+small{
+font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+i {
+	color: #3189e4;
+}
+p {
+	color:#8b8d8c;
+}
+img:hover {
+	 transform: scale(1.25);
+}
+.temps{
+	font-size: 11px;
+	color: lightgrey;
 }
