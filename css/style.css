@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+	font-family: Alegreya Sans SC;
+}
+
+header div{
+	display:inline-block;
+}
+
+header h1{
+	padding-left: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header{
+	
+	margin-bottom: 20px;
+}
+
+.photos-home img{
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 40px;
+}
+
+#main-nav {
+	position: relative;
+	left: 0;
+	margin-top: 0;
+	float: right;
+}
+
+.d-none {
+	display: none;
+}
+
+.fa-bars{
+	border: 1px solid white;
+	padding: 8px;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #d7c9a8;
+}
+
+ul{
+	padding: 0;
+	margin-top: 0;
+}
+
+.nav-item {
+	display:inline;
+}
+
+.nav-item a {
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	background-color: /*rgb(255, 255, 255, 0.7)*/ white;
+}
+
+.nav-item:first-child a {
+	border-radius: 0 5px 0 0px;
+}
+.nav-item:last-child a {
+	border-radius: 0 0px 5px 0;
+}
+.nav-item a:hover {
+	background: /*rgb(255,0,0, 0.8)*/ #d7c9a8;
+}
+
+.icon a{
+	color: #d7c9a8;
+}
+
+.icon a:hover{
+	color: black;
+}
+
+.bouton-home .btn{
+	color: black;
+	background: white;
+	border-color: #d7c9a8;
+	margin-bottom: 40px;
+	display: block;
+}
+
+.btn:hover, #nvx-home:hover{
+	background: #d7c9a8
+}
+
+.footer{
+	border-top: 1px solid #d7c9a8;
+	display: block;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.footer li{
+	display: inline-block;
+	justify-content: space-between;
+	padding-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body {
+	margin: 0;
+}
+
+div#slider {
+	overflow: hidden;
+}
+
+div#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+div#slider figure {
+ position: relative;
+ width: 500%;
+ margin: 0;
+ left: 0;
+ text-align: left;
+ font-size: 0;
+ animation: 15s slidy infinite;
+}
+
+#nvx-home{
+	color: black;
+	background: rgb(255, 255, 255, 0.7);
+	border: 2px solid #d7c9a8;
+	position: relative;
+	top: -180px;
+	
+}
+
+*/

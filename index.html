@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Le site de vente</title>
+	<title>Vendez vos vêtements</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Bootstrap CSS-->
+
+	<!-- Liens: Bootstrap CSS et bootstrap JS-->
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- liens : Javascript jquery -->
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<!-- Liens pour la police-->
+
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+
 	<!-- Lien pour les icones "Font"-->
+
 	<script src="https://use.fontawesome.com/64906f59e1.js"></script>
+
 	<!-- Linker le CSS-->
+
 	<link href="css/style.css" rel="stylesheet">
 </head>
+
+
 <body>
+
 	<header>
-	<div>
-	<nav class="btn-group">
-    <div class="container">
-        <ul class="nav navbar-default nav-pills">
-            <li><a href="index.php">Mes motivations</a></li>
-            <li><a href="adresse.php">Coordonnées personnelles</a></li>
-            <li><a href="atouts.php">Mes atouts</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" id="skills" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Mes compétences<span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="skills">
-                    <li><a href="web.php">Programmation Web</a></li>
-                    <li><a href="office.php">Bureautique</a></li>
-                    <li><a href="lang.php">Langues</a></li>
-                </ul>
-            </li>
-            <li><a href="experience.php">Mon parcours</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" id="formation" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Ma formation<span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="formation">
-                    <li><a href="fac.php">Universitaire</a></li>
-                    <li><a href="computing.php">Bureautique</a></li>
-                    <li><a href="special.php">Spécialisée</a></li>
-                </ul></li>
-                <li><a href="contact.php">Me contacter</a></li>
-            </ul>
-        </div>
-    </nav>
-		Le menu hamburger
-	</div>
-	<div>
-		<h1>Ila</h1>
-	</div>
-	</header>
-	<div class="">
-		Photo qui défiles automatiquement (carousel), mais aussi avec un bouton (href=#Ila).
-	</div>
-	<div>
-		Un bouton connexion
-	</div>
-	<div>
-		Un bouton créer compte
-	</div>
-	<section class="footer">
-		(Un trait, border radius, pour séparer cette partie de la précédente)
-		<div>Abonnez vous</div>
-		<div>
-		<ul class="icon">
-			<li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
-			<li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
-			<li> <a href="#"> <i class="fa fa-pinterest-p"></i></a></li>
-			<li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
-		</ul>
-			Font facebook
-			font twitter
-			font pinterest
-			font instagram
+		<div class="bar">
+			<i id="ham" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+			<ul id="main-nav" class="d-none">
+				<li class="nav-item"><a href="#" class="accueil">Accueil</a></li>
+				<li class="nav-item"><a href="#" class="clip">Shopping</a></li>
+				<li class="nav-item"><a href="#" class="series">Messagerie</a></li>
+			</ul>
 		</div>
-	</section>
+		<div class="titre-home">
+			<h1>Ila</h1>
+		</div>
+	</header>
+	<main>
+		<section class="photos-home">
+
+			<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+			<div id="slider">
+			
+				<figure>
+					<img src="http://media.paperblog.fr/i/370/3705261/zara-lookbook-october-2010-L-3.jpeg" alt>
+					<img src="http://www.lerockbox.com/wp-content/uploads/2010/10/zara-woman-oct10-lookbook-10.jpg" alt>
+					<img src="https://s-media-cache-ak0.pinimg.com/736x/4e/15/1e/4e151e023d9c0341a15bf6f21e8f5b66--fashion-details-google-search.jpg" alt>
+					<img src="http://cdn.hotbeautyhealth.com/wp-content/uploads/2010/10/zara-woman-oct10-lookbook-12.jpg" alt>
+					<img src="http://media.paperblog.fr/i/370/3705261/zara-lookbook-october-2010-L-5.jpeg" alt>
+				</figure>
+
+				<a class="btn offset-3 col-6" id="nvx-home">Nouveautés</a>
+
+			</div>
+		</section>
+
+		<section class="bouton-home">
+			<a class="btn offset-3 col-6">Connexion</a>
+			<a class="btn offset-3 col-6">Créer un compte</a>
+		</a>
+
+	</main>
+	<footer class="footer">
+			<div>Abonnez vous</div>
+			<div>
+				<ul class="icon">
+					<li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+					<li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
+					<li> <a href="#"> <i class="fa fa-pinterest-p"></i></a></li>
+					<li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+	</footer>
+
 </body>
+
+
+<script type="text/javascript">
+	$("#ham").click(function () {
+		$("#main-nav").toggleClass("d-none");
+	});
+</script>
+
 </html>
