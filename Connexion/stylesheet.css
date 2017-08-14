@@ -1,0 +1,59 @@
+/*#d7c9a8*/
+                       /*Bouton voir plus*/
+a.voir{
+  position: absolute;
+  color:white;
+  text-decoration: none;
+  border: 2px solid #d7c9a8;
+  padding: 2px auto;
+  text-align: center;
+
+}
+/*                  Bouton et h3 responsive*/
+@media only screen and (max-width:320px){
+  a.voir{
+    top: 50%;
+    left: 25%;}
+    h3{
+      font-size: 15px;}
+      a.couleur{
+        font-size: 15px;}
+  }
+
+@media only screen and (min-width:321px){
+  a.voir{
+    top: 110%;
+    left: 25%;
+  font-size: 20px;}
+  h3{
+    font-size: 20px;
+  }
+  a.couleur{
+    font-size: 20px;}
+}
+@media only screen and (min-width:1020px){
+  a.voir{
+  top: 145%;
+    left: 25%;
+    font-size: 25px;}
+    h3{
+      font-size: 25px;
+    }
+    a.couleur{
+      font-size: 25px;}
+
+}
+/*         Couleur boutons get it et messagerie*/
+a.couleur{
+  border-color: #d7c9a8;
+  color: black;
+}
+/*      Position relative img à switcher*/
+img.vignette{
+  position: relative;
+}
+/*Taille font des boutons.*/
+
+ul li{
+  text-decoration-style: dashed;
+}
