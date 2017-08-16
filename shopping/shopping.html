@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>ILA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+  <!-- Icon Fonts -->
+  <script src="https://use.fontawesome.com/64906f59e1.js"></script>
+
+  <!-- Text Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER PROVISOIRE  -->
+  <header>
+    <div class="bar">
+			<i id="ham" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+			<ul id="main-nav" class="d-none">
+				<li class="nav-item"><a href="#" class="accueil">Accueil</a></li>
+				<li class="nav-item"><a href="#" class="clip">Shopping</a></li>
+				<li class="nav-item"><a href="#" class="series">Messagerie</a></li>
+			</ul>
+		</div>
+		<div class="titre-home">
+			<a href="http://localhost/TinderApp/TinderApp2/"><h1>Ila</h1></a>
+		</div>
+  </header>
+
+
+
+  <!-- VIGNETTE DES IMAGES A SWITCHER -->
+  <div class="col-12">
+    <img src="images/img-voir/img-voir1.jpg" class=" vignette img-fluid col-10 offset-1 slider-img" alt="Robe 1">
+  </div>
+  <!--                               VOIR PLUS  ROBE                            -->
+  <a class=" voirp col-6 ">
+  &#171;
+  </a>
+  <a class=" voirplus col-6 voir1 " data-toggle="modal" href="#robe1">
+    Voir plus
+  </a>
+  <a class=" voirs col-6 "  >
+    &#187;
+  </a>
+
+
+
+
+  <!--                    Fenêtre modale voir plus                    -->
+  <!-- <div class="modal fade" id="robe"> -->
+  <div class="modal fade"  id="robe1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content col-10">
+        <header class="modal-header">
+          <h3>ila shopping</h3>
+          <button class="close text-danger" data-dismiss="modal"> &times;</button>
+        </header>
+        <div class="modal-body">
+          <div id="slide-photo" class="carousel slide col-8 offset-2" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slide-photo" data-slide-to="0" class="active"></li>
+              <li data-target="#slide-photo" data-slide-to="1" ></li>
+              <li data-target="#slide-photo" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active ">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir1.jpg" alt="First slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir2.jpg" alt="Second slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir3.jpg" alt="Second slide">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slide-photo" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#slide-photo" role="button" data-slide="next">
+              <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <a class="carousel-control-pause" href="#slide-photo" role="button">
+              <span class="carousel-control-pause-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+
+
+
+          <p class="py-3 text-center"> MARQUE: Manoush
+           Robe orange en très bon état taille 36 de la marque manoush.
+           Je me sépare de cette robe car elle n'est plus à ma taille mais elle reste en parfait état.
+           L'envois est possible, si besoin de plus de photos possinle aussi. 100€.</p>
+
+          </ul>
+        </div>
+        <footer class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Get Back</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!--                               VOIR PLUS JUPE -->
+  <a class=" voir col-6 voir2" data-toggle="modal" href="#robe2" id="voir-2">
+    Voir plus
+  </a>
+
+  <!--                    Fenêtre modale voir plus -->
+  <!-- <div class="modal fade" id="robe"> -->
+  <div class="modal fade"  id="robe2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h3>ila shopping</h3>
+          <button class="close text-danger" data-dismiss="modal"> &times;</button>
+        </header>
+        <div class="modal-body">
+          <div id="slide-photo" class="carousel slide col-6 offset-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slide-photo" data-slide-to="0" class="active"></li>
+              <li data-target="#slide-photo" data-slide-to="1" ></li>
+              <li data-target="#slide-photo" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active ">
+                <img class="d-block img-fluid" src="images/img-voir/img-voirb1.jpg" alt="First slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voirb2.jpg" alt="Second slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voirb3.jpg" alt="Second slide">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slide-photo" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#slide-photo" role="button" data-slide="next">
+              <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <a class="carousel-control-pause" href="#slide-photo" role="button">
+              <span class="carousel-control-pause-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+
+
+
+          <p class="py-3 text-center"> MARQUE: Manoush
+           Jupe en très bon état taille 46 de la marque manoush.
+           Je me sépare de cette robe car elle n'est plus à ma taille mais elle reste en parfait état.
+           L'envois est possible, si besoin de plus de photos possinle aussi. 200€.</p>
+
+          </ul>
+        </div>
+        <footer class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Get Back</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!--                               VOIR PLUS PANTALON   -->                          -
+  <a class=" voir col-6 voir3" data-toggle="modal" href="#robe3" id="voir-3">
+    Voir plus
+  </a>
+
+  <!--                    Fenêtre modale voir plus                    -->
+  <!-- <div class="modal fade" id="robe"> -->
+  <div class="modal fade"  id="robe3" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h3>ila shopping</h3>
+          <button class="close text-danger" data-dismiss="modal"> &times;</button>
+        </header>
+        <div class="modal-body">
+          <div id="slide-photo" class="carousel slide col-6 offset-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slide-photo" data-slide-to="0" class="active"></li>
+              <li data-target="#slide-photo" data-slide-to="1" ></li>
+              <li data-target="#slide-photo" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active ">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir1c.jpg" alt="First slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir2c.jpg" alt="Second slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voir3c.jpg" alt="Second slide">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slide-photo" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#slide-photo" role="button" data-slide="next">
+              <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <a class="carousel-control-pause" href="#slide-photo" role="button">
+              <span class="carousel-control-pause-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+
+
+
+          <p class="py-3 text-center"> MARQUE: Manoush
+           Pantalon en très bon état taille 36 de la marque manoush.
+           Je me sépare de cette robe car il n'est plus à ma taille mais elle reste en parfait état.
+           L'envois est possible, si besoin de plus de photos possinle aussi. 100€.</p>
+
+          </ul>
+        </div>
+        <footer class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Get Back</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--                               VOIR PLUS   COMBINAISON                           -->
+   <a class=" voir col-6 voir4" data-toggle="modal" href="#robe4" id="voir4">
+    Voir plus
+  </a>
+
+  <!--                    Fenêtre modale voir plus                    -->
+
+  <div class="modal fade"  id="robe4" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h3>ila shopping</h3>
+          <button class="close text-danger" data-dismiss="modal"> &times;</button>
+        </header>
+        <div class="modal-body">
+          <div id="slide-photo" class="carousel slide col-6 offset-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slide-photo" data-slide-to="0" class="active"></li>
+              <li data-target="#slide-photo" data-slide-to="1" ></li>
+              <li data-target="#slide-photo" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active ">
+                <img class="d-block img-fluid" src="images/img-voir/img-voird1.jpg" alt="First slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voird2.jpg" alt="Second slide">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/img-voir/img-voird3.jpg" alt="Second slide">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slide-photo" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#slide-photo" role="button" data-slide="next">
+              <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <a class="carousel-control-pause" href="#slide-photo" role="button">
+              <span class="carousel-control-pause-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+
+
+
+          <p class="py-3 text-center"> MARQUE: Manoush
+           combinaison en très bon état taille 36 de la marque manoush.
+           Je me sépare de cette robe car elle n'est plus à ma taille mais elle reste en parfait état.
+           L'envois est possible, si besoin de plus de photos possinle aussi. 100€.</p>
+
+          </ul>
+        </div>
+        <footer class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Get Back</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--  TEXT ET BOUTONS POUR AUTRES PAGES -->
+  <section class="page-pot">
+    <h3 class=" text-center border-bottom col-6 offset-3 pt-3" style="border-bottom:1px solid #d7c9a8">Ila des Robes, IlaTown.</h3>
+    <a class=" btn couleur btn-block col-10 offset-1 my-3" href="#" role="button">Contacter</a>
+    <a class=" btn couleur btn-block col-10 offset-1" href="http://localhost/TinderApp/TinderApp2/partie%20laurie/messagerie.html" role="button">Messagerie</a>
+    <a class=" btn couleur btn-block col-10 offset-1 my-3" href="http://localhost/TinderApp/TinderApp2/partie%20laurie/Favoris/favoris.html#" role="button">Favoris</a>
+  </div>
+
+
+</section>
+
+<footer class="footer">
+    <div>Abonnez vous</div>
+    <div>
+      <ul class="icon">
+        <li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+        <li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
+        <li> <a href="#"> <i class="fa fa-pinterest-p"></i></a></li>
+        <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+</footer>
+</body>
+<script type="text/javascript">
+  $("#ham").click(function () {
+    $("#main-nav").toggleClass("d-none");
+  });
+</script>
+</html>
