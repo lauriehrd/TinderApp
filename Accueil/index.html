@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ <html lang="fr">
+ <head>
+   <title>ILA</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+   </script>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+   <!-- Icon Fonts -->
+   <script src="https://use.fontawesome.com/64906f59e1.js"></script>
+ 
+   <!-- Text Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+   <!-- Theme CSS -->
+   <link href="style.css" rel="stylesheet">
+ </head>
+ 
+ <body>
+    <div id="accueil" class="body">
+       <div class="bar">
+            <i id="ham" class="fa fa-bars fa-1x" aria-hidden="true"></i>
+            <ul id="main-nav" class="d-none">
+              <li class="nav-item"><a href="#accueil" class="accueil">accueil</a></li>
+              <li class="nav-item"><a href="http://localhost/Projets_Capprio/TinderApp/Favoris/"" class="clip">favoris</a></li>
+              <li class="nav-item"><a href="http://localhost/Projets_Capprio/TinderApp/Messagerie/" class="series">messagerie</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="mobileTest">
+         <!-- HEADER PROVISOIRE  -->
+      <header>
+          <div class="titre-home">
+            <h1>Ila</h1>
+          </div>
+        </header>
+        <main>
+        <section class="photos-home">
+
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+            <div id="slider">
+            
+              <figure>
+                <img src="http://media.paperblog.fr/i/370/3705261/zara-lookbook-october-2010-L-3.jpeg" alt>
+                <img src="http://www.lerockbox.com/wp-content/uploads/2010/10/zara-woman-oct10-lookbook-10.jpg" alt>
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/4e/15/1e/4e151e023d9c0341a15bf6f21e8f5b66--fashion-details-google-search.jpg" alt>
+                <img src="http://cdn.hotbeautyhealth.com/wp-content/uploads/2010/10/zara-woman-oct10-lookbook-12.jpg" alt>
+                <img src="http://media.paperblog.fr/i/370/3705261/zara-lookbook-october-2010-L-5.jpeg" alt>
+              </figure>
+
+              <a class="btn offset-3 col-6" id="nvx-home">Nouveautés</a>
+
+            </div>
+          </section>
+
+          <section class="bouton-home">
+            <a class="btn offset-3 col-6" href="http://localhost/Projets_Capprio/TinderApp/Connexion/">Connexion</a>
+            <a class="btn offset-3 col-6" href="http://localhost/Projets_Capprio/TinderApp/Favoris/">Favoris</a>
+          </a>
+        </section>
+          </main>
+       
+         <!-- VIGNETTE DES IMAGES A SWITCHER -->
+       <footer class="footer">
+           <div>Abonnez vous</div>
+           <div>
+             <ul class="icon">
+               <li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+               <li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
+               <li> <a href="#"> <i class="fa fa-pinterest-p"></i></a></li>
+               <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+             </ul>
+           </div>
+       </footer>
+    </div>
+    </div>
+ </body>
+ <script type="text/javascript">
+   $("#ham").click(function () {
+     $("#main-nav").toggleClass("d-none");
+   });
+ </script>
+ </html>

@@ -1,0 +1,32 @@
+h2{
+	letter-spacing: 14px;
+	font-size: 25px;
+ 	font-weight:bold;
+ 	font-family: 'Alegreya Sans SC', sans-serif;
+ 	border-bottom: 1px solid #d7c9a8;
+ 	padding-bottom: 5px;
+}
+
+p {
+	color:#8b8d8c;
+}
+
+img {
+width:50%;
+
+}
+ button{
+ background-color: #d7c9a8;
+ font-size: 10px;
+ }
+
+ h4{
+ 	border-top:  1px solid #d7c9a8;
+ 	 	border-bottom: 1px solid #d7c9a8;
+ 	 	font-size: 15px;
+ 	 	letter-spacing: 14px;
+ 	 	padding:10px;
+ }
+ .ml-5{
+ 	padding-top:15px;
+}

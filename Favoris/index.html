@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Favoris</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script src="https://use.fontawesome.com/64906f59e1.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<header></header>
+<section class="Favoris container">
+		<div class="col-md-6 col-sm-6 row">
+			<h2 class="text-uppercase text-center mt-5 mx-5 mb-2 <!-- col-md-10 col-md-10 --> ">Favoris</h2>
+			<h4 class="text-center mt-5 mx-5 mb-5 <!-- col-md-10 col-md-10 -->">4 Articles</h4>
+			<figure class="ml-5 float-left">
+			<img src="http://data.whicdn.com/images/230031704/superthumb.jpg" class="img-fluid pull-left img-thumbnail mb-2 mr-4 d-flex align-self-center">
+			<figcaption class="">
+			<small class="font-weight-bold "> 80€
+			</small>
+			<p class="m-1">Veste en daim </p>
+			<p class="m-0"> Rose | FR 36</p>
+							<a href="#"><button type="button" class="text-uppercase mt-3" id="notif" style="border:1px solid #d7c9a8"> Mettre dans le panier</button></a>
+					</figcaption>
+				</figure>
+				<figure class="ml-5 float-left" style="border-top:1px solid #d7c9a8">
+			<img src="http://data.whicdn.com/images/185538655/superthumb.jpg" class="img-fluid pull-left img-thumbnail mb-2 mr-4">
+			<figcaption class="">
+			<small class="d-block text-left font-weight-bold "><s>39,99€</s></small><small class="text-danger font-weight-bold">19,99€</small>
+			<p class="m-1">Pull </p>
+							<p class="m-0"> Gris | FR 38</p>
+							<a href="#"><button type="button" class="text-uppercase mt-3" id="notif" style="border:1px solid #d7c9a8"> Mettre dans le panier</button></a>
+					</figcaption>
+				</figure>
+			<figure class="ml-5 float-left" style="border-top:1px solid #d7c9a8">
+			<img src="http://data.whicdn.com/images/233677915/superthumb.jpg" class="img-fluid pull-left img-thumbnail mb-2 mr-4">
+			<figcaption class="">
+			<small class="d-block text-left font-weight-bold "> 70€
+			</small>
+			<p class="m-1">Basket Nike </p>
+							<p class="m-0"> Khaki | FR 38</p>
+							<a href="#"><button type="button" class="text-uppercase mt-3" id="notif" style="border:1px solid #d7c9a8"> Mettre dans le panier</button></a>
+					</figcaption>
+				</figure>
+			<figure class="ml-5 float-left" style="border-top:1px solid #d7c9a8">
+			<img src="http://data.whicdn.com/images/291444764/superthumb.jpg" class="img-fluid pull-left img-thumbnail mb-2 mr-4">
+			<figcaption class="">
+			<small class="d-block text-left font-weight-bold "><s> 25€</s></small><small class="text-danger font-weight-bold"> 18,50€</small>
+			<p class="m-1">Jupe </p>
+							<p class="m-0"> Blanc | FR 36</p>
+							<a href="#"><button type="button" class="text-uppercase mt-3" id="notif" style="border:1px solid #d7c9a8"> Mettre dans le panier</button></a>
+					</figcaption>
+				</figure>
+		</div>
+	</section>
+
+	<script>
+   $('#notif').click(function() {
+	alert ("Ajouté au panier!");
+});
+	</script>
+</body>
+<footer>
+</footer>
+</html>

@@ -1,0 +1,323 @@
+/*#d7c9a8*/
+/*Bouton voir plus*/
+* {
+  box-sizing: border-box;
+  font-family: Alegreya Sans SC;
+}
+
+
+.body{
+background-image: url(../images/img-voir/fond3.png); 
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom:-200px;
+z-index: 2;
+/*width: 90vw;
+height: 90vh;*/
+}
+
+a h1{
+  color: black;
+  text-decoration: none;
+}
+a h1:hover{
+  text-decoration: none;
+}
+header div{
+  display:inline-block;
+}
+
+header h1{
+  padding-left: 130px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header{
+
+/*  margin-bottom: 20px;*/
+}
+
+.photos-home img{
+  max-width: 100%;
+  height: auto;
+/*  padding-bottom: 40px;*/
+}
+
+#ham {
+   z-index: 2;
+
+}
+
+#main-nav {
+
+  width: 160px;
+  position: relative;
+  top: 5rem;
+  left: 31rem;
+
+
+}
+
+.d-none {
+  display: none;
+}
+
+.fa-bars{
+  border: 1px solid white;
+  padding: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #d7c9a8;
+  position: relative;
+  top: 5rem;
+  left: 31rem;
+}
+
+
+ul{
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-item {
+  display:inline;
+}
+
+.nav-item a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  background-color: /*rgb(255, 255, 255, 0.7)*/ white;
+  text-decoration: none;
+}
+
+.nav-item:first-child a {
+  border-radius: 0 5px 0 0px;
+}
+.nav-item:last-child a {
+  border-radius: 0 0px 5px 0;
+}
+.nav-item a:hover {
+  background: /*rgb(255,0,0, 0.8)*/ #d7c9a8;
+}
+
+a.voirplus{
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  border: 2px solid #d7c9a8;
+  padding:1px auto;
+  text-align: center;
+  background-color:rgb(255,255,255,0.7);
+}
+a.voir2, a.voir3, a.voir4{
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  border: 2px solid #d7c9a8;
+  padding:1px auto;
+  text-align: center;
+  background-color:rgb(255,255,255,0.7);
+  display: none;
+}
+a.voirp, a.voirs{
+  position: absolute;
+  color: #d7c9a8;
+}
+/*                  Bouton et h3 responsive*/
+@media only screen and (max-width:1920px){
+  a.voirp{
+    top: 35%;
+    left: 15%;}
+    a.voirs{
+      top: 35%;
+      left: 75%;;
+    }
+    a.voirplus{
+      top:40%;
+      left:25%;
+    }
+    h3{
+      font-size: 15px;}
+      a.couleur{
+        font-size: 15px;}
+        .mobileTest{
+          max-width: 290px;
+          margin: 5rem auto 1rem;
+          z-index: -1;
+
+        }
+
+
+      }
+
+/*      @media only screen and (min-width:321px){
+        a.voirp{
+          top: 45%;
+          left: 15%;}
+          a.voirs{
+            top: 45%;
+            left: 75%;;
+          }
+          a.voirplus{
+            top: 110%;
+            left:30%;
+            font-size: 20px;
+          }
+          h3{
+            font-size: 20px;
+          }
+          a.couleur{
+            font-size: 20px;}
+            body{
+              max-width: 768px;
+              width: 100%;
+            }
+          }
+          @media only screen and (min-width:768px){
+            a.voirp{
+              top: 45%;
+              left: 15%;}
+              a.voirs{
+                top: 45%;
+                left: 75%;;
+              }
+              a.voirplus{
+                top: 145%;
+                left: 30%;
+                font-size: 25px;
+              }
+              h3{
+                font-size: 25px;
+              }
+              a.couleur{
+                font-size: 25px;}
+                body{
+                  max-width: 1064px;
+                  width: 100%;
+                }
+
+              }*/
+              /*         Couleur boutons get it et messagerie*/
+              a.couleur{
+                border-color: #d7c9a8;
+                color: black;
+              }
+              .icon a{
+              	color: #d7c9a8;
+              }
+
+              .icon a:hover{
+              	color: black;
+              }
+              .bouton-home .btn{
+                  color: black;
+                  background: white;
+                  border-color: #d7c9a8;
+                  margin-bottom: 20px;
+                  display: block;
+                   z-index: 4;
+                }
+
+.btn:hover, #nvx-home:hover{
+  background: #d7c9a8
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider {
+  overflow: hidden;
+}
+
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+div#slider figure {
+ position: relative;
+ width: 500%;
+ margin: 0;
+ left: 0;
+ text-align: left;
+ font-size: 0;
+ animation: 15s slidy infinite;
+}
+
+#nvx-home{
+  color: black;
+  background: rgb(255, 255, 255, 0.7);
+  border: 2px solid #d7c9a8;
+  position: relative;
+  top: -110px;
+   z-index: 4;
+}
+
+
+              .footer{
+              	border-top: 1px solid #d7c9a8;
+              	display: block;
+/*              	justify-content: space-between;*/
+              	padding-top: 20px;
+/*              	padding-bottom: 30px;*/
+              	text-align: center;
+                background-color: transparent;
+              }
+
+              .footer li{
+              	display: inline-block;
+              	justify-content: space-between;
+              	padding-right: 20px;
+              	margin-top: 20px;
+              	font-weight: bold;
+                background-color: transparent;
+}
+
+
+h2 {
+  letter-spacing: 14px;
+  font-size: 17px;
+  font-weight:normal;
+  padding-bottom: 20px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+img {
+width:20%;
+
+}
+small{
+font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+i {
+  color: #3189e4;
+}
+p {
+  color:#8b8d8c;
+}
+img:hover {
+   transform: scale(1.25);
+}
+.temps{
+  font-size: 11px;
+  color: lightgrey;
+}
