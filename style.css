@@ -321,3 +321,9 @@ img:hover {
   font-size: 11px;
   color: lightgrey;
 }
+
+
+li i{
+
+  color: black;
+}
